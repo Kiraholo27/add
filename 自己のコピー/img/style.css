@@ -1,0 +1,431 @@
+.seed{
+  
+  background-color:#12B0B1;
+  text-align: center;
+ position: relative; 
+ width: 600px;
+ height: 600px;
+}
+.seed img{
+  width: 253%;
+  margin-left: -10px;
+  margin-top: -9px;
+  height: 210px;
+
+}
+body{
+  background-color: #12B0B1;
+}
+h5{
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 550px;
+  font-size: 45px;
+  color: #f01111;
+  padding: 0;
+  margin: 0;
+}
+h6{
+  position: absolute;
+  text-align: center;
+  top: 80px;
+  left: 540px;
+
+  font-size: 45px;
+  color: #f01111;
+  padding: 0;
+  margin: 50px;
+}
+.moji{
+  font-size: 30px;
+  color: rgb(95, 74, 255);
+  background-color:#12B0B1;
+}
+
+.moji-content{
+  width: 70%;
+  display: flex;
+  border-radius: 24px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background: rgb(229, 226, 86);
+  padding: 40px;
+}
+
+.kuso {
+  width: 45%;
+    border-radius: 40px;
+}
+
+.kuso img{
+  width: 100%;
+}
+
+.mojip{
+  width: 45%;
+}
+
+.moji p{
+  font-size: 45px;
+}
+.sns{
+  display: flex;
+  
+  justify-content: center;
+}
+.skill{
+  width: 90%;
+  max-width: 1200px;
+  margin: 70px auto 0;
+  /* margin-top: 550px; */
+  text-align: center;
+  padding-top: -160%;
+}
+.skill span{
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+.skill h2{
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 900;
+  color: #0051ff;
+  margin-bottom: 320px;
+  margin-top: 330px;
+}
+
+.skill-content{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+}
+
+.skill-item{
+  width: 23%;
+  margin-bottom: 1%;
+  background-color: rgb(0, 60, 255);
+
+}
+
+.skill-item img{
+  width: 100%;
+  aspect-ratio: 27/18;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.skill-item span{
+  font-size: 16px;
+  line-height: 1.2;
+  /* margin-top: 24px; */
+ bottom: 50px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.works-list{
+  width: 100%;
+  margin-top: 80px;
+  padding: 0;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px 8px;
+  /* flex-wrap: wrap;
+  font-size: 40px;
+  margin-bottom: 1%; */
+}
+
+.works-list img{
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.works-list li{
+  list-style: none;
+}
+.works-title h2{
+  font-size: 40px;
+  display: flex;
+  min-width: 1200px;
+}
+.works-title{
+  width: 90%;
+  /* min-width: 1200px; */
+  margin-inline: auto;
+  font-size: 24px;
+  position:relative;
+  letter-spacing: .15em;
+}
+.works-title::before{
+  content: "works";
+  display: inline-block;
+  font-size: 160px;
+  font-weight: 900;
+  line-height: 1;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: -20%;
+  z-index: -1;
+  opacity: 0.3;
+}
+.works{
+  padding: 200px;
+}
+.about-caption img{
+  width: 100%;
+}
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  padding: 2rem;
+  margin-bottom: -30px;
+  margin-left: -7px;
+  margin-top: 22px;
+  margin-right: -7px;
+  font-size: 15px;
+  color: #4b5564;
+  background: #ffffff;
+}
+
+.footer__navi-heading {
+  font-weight: 600;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.footer__navi li {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .md-flex {
+    display: flex;
+  }
+
+  .md-justify-between {
+    justify-content: space-between;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+    to {
+    transform: translateX(-100%);
+  }
+  }
+/*  */
+  .scroll-infinity__wrap {
+    display: flex;
+    overflow: hidden;
+    margin-top: -715px;
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .scroll-infinity h3{
+    text-align: center;
+    margin-top: -30px;
+  }
+  .scroll-infinity__list {
+    display: flex;
+    list-style: none;
+    padding: 0
+  }
+  .scroll-infinity__list--left {
+    animation: infinity-scroll-left 80s infinite linear 0.5s both;
+  }
+  .scroll-infinity__item {
+    width: calc(100vw / 6);
+  }
+  .scroll-infinity__item>img {
+    width: 100%;
+  }
+
+
+
+  /*=== 9-1-3 マウスが動いてスクロールを促す ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown3{
+  /*描画位置※位置は適宜調整してください*/
+position:absolute;
+margin-bottom: 470px;
+right:50%;
+margin-top: -50px;
+  /*マウスの動き1.6秒かけて動く永遠にループ*/
+animation:mousemove 1.6s ease-in-out infinite;
+}
+
+/*下からの距離が変化して上から下に動く*/
+@keyframes mousemove{
+    0%{bottom:10px;}
+    50%{bottom:5px;}
+   100%{bottom:10px;}
+}
+
+/*Scrollテキストの描写*/
+.scrolldown3 span{
+  /*描画位置*/
+position: absolute;
+left:-15px;
+bottom:45px;
+margin-top: -50px;
+  /*テキストの形状*/
+color: #000000;
+font-size: 0.7rem;
+letter-spacing: 0.05em;
+}
+
+/*マウスの中の線描写 */
+.scrolldown3 span::after{
+content: "";
+  /*描画位置*/
+position: absolute;
+top:10px;
+left:17px;
+  /*線の形状*/
+width: 1px;
+height: 15px;
+background: #000000;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+animation: mousepathmove 1.4s linear infinite;
+opacity:0;
+}
+
+/*上からの距離・不透明度・高さが変化して上から下に流れる*/
+@keyframes mousepathmove{
+0%{
+  height:0;
+  top:10px;
+  opacity: 0;
+}
+50%{
+  height:15px;
+  opacity: 1;
+}
+100%{
+  height:0;
+  top:30px;
+  opacity: 0;
+}
+}
+
+/*マウスの描写 */
+.scrolldown3:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom:0;
+  left:-10px;
+  /*マウスの形状*/
+width:25px;
+height:37px;
+border-radius: 10px;
+border:1px solid #000000;
+}
+
+
+/*マウスの中の丸の描写*/
+.scrolldown3:after{
+content:"";
+  /*描画位置*/
+position: absolute;
+bottom:26px;
+left:0;
+  /*丸の形状*/
+width:5px;
+height: 5px;
+border-radius: 50%;
+border:1px solid #000000;
+}
+
+/*==================================================
+共通　横並びのための設定
+===================================*/
+
+.gnavi{
+  display: flex;
+  flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin:0 0 50px 0;
+  list-style: none;
+  margin-top: -305px;
+}
+
+.gnavi li a{
+  display: block;
+  padding:10px 30px;
+  text-decoration: none;
+  color: #333;
+}
+
+.gnavi li{
+  margin-bottom:20px;
+}
+
+/*==================================================
+　5-3-1 中心から外に線が伸びる（下部）
+===================================*/
+
+.gnavi li a{
+  /*線の基点とするためrelativeを指定*/
+position: relative;
+margin-bottom: 700px;
+}
+
+.gnavi li.current a
+.gnavi li a:hover{
+color:#0481A2;
+}
+
+.gnavi li a::after {
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 2px;
+  background:#0481A2;
+  /*アニメーションの指定*/
+  transition: all .3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+  transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
+/* ページトップへ戻るボタン */
+#pagetop {
+  position:fixed;
+  bottom:0px;
+ height: 95%;
+  right:-60px;
+}
+#pagetop img{
+  width: 50%;
+}
